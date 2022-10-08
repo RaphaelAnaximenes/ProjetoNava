@@ -1,0 +1,59 @@
+ Criando a classe entitybase POO js
+
+
+
+===== COMEÇO
+
+ class EntityBase{
+ 
+    #name
+    #age
+    #gender
+
+    
+    constructor({ name, age, gender}){
+
+        this.#name = name;
+        this.#age = age;
+        this.#gender = gender;    
+    
+    }
+    
+    get name(){
+        const preffix = this.#gender === "male" ? "Mr. " : "Ms. "
+        return `${preffix} ${this.#name}`
+
+    }
+
+}
+
+module.exports = EntityBase // Exports the class
+
+======== FIM ==============
+
+CONSTRUIDO ESTE MODULO, POR HORA VAMOS TESTAR ALGUMAS COISAS NA INDEX .js
+
+
+COMO VAI FICAR:
+===== COMEÇO ======
+
+const EntityBase = require ('./EntityBase')
+
+console.log (e = new EntityBase({
+   name:'Raphael Anaximenes',
+   gender:  "male",
+}).name)
+
+console.log (e = new EntityBase({
+    name:'?',
+    gender:  "female",
+ }).name)
+ 
+ ==== FIM ====
+
+
+
+
+
+ 31,25v=r-33Hhbvr1M
+
