@@ -1,7 +1,7 @@
 import http from 'http'
 
 async function handler(req, res) {
-  res.end('Hello world! - Client')
+  res.end('Renderizando! - Client')
 }
 
 http.createServer(handler)

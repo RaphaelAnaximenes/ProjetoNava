@@ -25,7 +25,7 @@ async function handler(req, res) {
         .pipe(res)
         
 
-    res.end('Hello world! - Server')
+    res.end('Renderizando! - Server')
 
 }
 
